@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './NavBar.css'
+import './MainData.css';
 const MainData = () => {
 
     const navigate = useNavigate();
@@ -9,10 +9,10 @@ const MainData = () => {
         navigate('/');
     }
   return (
-    <div>
+    <div> 
         <header>
             <h1>DEALSDRAY</h1>
-        </header>
+        </header> 
         <hr />
         <div className='navbar'>
         <h3 className='navbar-title'>Home</h3>
@@ -25,6 +25,7 @@ const MainData = () => {
             </div>
             </div>
         </div>
+
   )
 }
 
