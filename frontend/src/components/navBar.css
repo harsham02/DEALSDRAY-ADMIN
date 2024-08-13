@@ -1,0 +1,41 @@
+
+.navbar {
+    width: 100%;
+    border-width: 1px 1px 1px 0;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border: none;
+    gap: 24px;
+    padding-top: 10px;
+}
+.navbar .navbar-title{
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.select-box {
+    border: 1px solid #1f2937;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    background: #2c4467;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 20px;
+    cursor: pointer;
+    outline: 0;
+}
+.toggle-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+.toggle-container button{
+    color: #ffffff;
+}
+.toggle-container button:hover{
+ text-decoration: underline;
+}
