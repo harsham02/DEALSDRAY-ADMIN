@@ -23,7 +23,7 @@ const Dashboard = ({ user }) => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/employees');
+      const response = await axios.get('https://dealsdray-admin.onrender.com/api/employees');
       const employees = response.data;
       setEmployees(employees);
     } catch (err) {

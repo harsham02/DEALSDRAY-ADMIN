@@ -62,7 +62,7 @@ const UpdateEmployee = ({ employee, onClose }) => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.put(`http://localhost:5000/api/employees/${employee._id}`, formData, {
+      await axios.put(`https://dealsdray-admin.onrender.com/${employee._id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

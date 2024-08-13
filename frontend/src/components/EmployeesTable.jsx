@@ -25,7 +25,7 @@ import {
     useEffect(() => {
       const fetchEmployees = async () => {
         try {
-          const response = await axios.get('http://localhost:5000/api/employees');
+          const response = await axios.get('https://dealsdray-admin.onrender.com/api/employees');
           setEmployees(response.data);
           setFilteredEmployees(response.data);
         } catch (err) {
@@ -68,7 +68,7 @@ import {
   
     const handleDelete = async (employeeId) => {
       try {
-        await axios.delete(`http://localhost:5000/api/employees/${employeeId}`);
+        await axios.delete(`https://dealsdray-admin.onrender.com/api/employees/${employeeId}`);
         setEmployees(employees.filter(emp => emp._id !== employeeId));
         toast({
           title: 'Employee deleted',

@@ -51,7 +51,7 @@ const CreateEmployee = ({ onClose }) => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.post('http://localhost:5000/api/employees', formData, {
+      await axios.post('https://dealsdray-admin.onrender.com/api/employees', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
