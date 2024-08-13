@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { IoIosAddCircle } from "react-icons/io";
-import NavBar from '../components/navBar';
+
 import {
   Button, Modal,
   ModalOverlay,
@@ -14,6 +14,7 @@ import {
 import CreateEmployee from '../components/CreateEmployee';
 import axios from 'axios';
 import EmployeesTable from '../components/EmployeesTable';
+import NavBar from '../components/navBar';
 
 const Dashboard = ({ user }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,8 +46,8 @@ const Dashboard = ({ user }) => {
 
   return (
     <div className='dashboard'>
-      <NavBar />
 
+      <NavBar />
       <div className='control-panels'>
         <Button bg={'transparent'} color={'whitesmoke'}>
           Total Count : {employeesCount}
