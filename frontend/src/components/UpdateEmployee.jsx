@@ -102,8 +102,10 @@ const UpdateEmployee = ({ employee, onClose }) => {
       <form onSubmit={handleSubmit}>
         <Stack spacing={4} align="flex-start">
           <FormControl isRequired>
-            <FormLabel fontSize={'large'}>Name</FormLabel>
+            <FormLabel htmlFor="name" fontSize={'large'}>Name</FormLabel>
             <Input
+              id="name"
+              name="name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -112,8 +114,10 @@ const UpdateEmployee = ({ employee, onClose }) => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel fontSize={'large'}>Email</FormLabel>
+            <FormLabel htmlFor="email" fontSize={'large'}>Email</FormLabel>
             <Input
+              id="email"
+              name="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -122,8 +126,10 @@ const UpdateEmployee = ({ employee, onClose }) => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel fontSize={'large'}>Mobile No</FormLabel>
+            <FormLabel htmlFor="phoneNumber" fontSize={'large'}>Mobile No</FormLabel>
             <Input
+              id="phoneNumber"
+              name="phoneNumber"
               type="text"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
@@ -132,8 +138,10 @@ const UpdateEmployee = ({ employee, onClose }) => {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel fontSize={'large'}>Designation</FormLabel>
+            <FormLabel htmlFor="designation" fontSize={'large'}>Designation</FormLabel>
             <Select
+              id="designation"
+              name="designation"
               placeholder="Select designation"
               value={designation}
               onChange={(e) => setDesignation(e.target.value)}
@@ -148,8 +156,8 @@ const UpdateEmployee = ({ employee, onClose }) => {
           </FormControl>
 
           <FormControl isRequired>
-            <FormLabel fontSize={'large'}>Gender</FormLabel>
-            <RadioGroup onChange={setGender} value={gender}>
+            <FormLabel htmlFor="gender" fontSize={'large'}>Gender</FormLabel>
+            <RadioGroup id="gender" name="gender" onChange={setGender} value={gender}>
               <HStack spacing={4}>
                 <Radio value="Male">Male</Radio>
                 <Radio value="Female">Female</Radio>
@@ -157,9 +165,9 @@ const UpdateEmployee = ({ employee, onClose }) => {
               </HStack>
             </RadioGroup>
           </FormControl>
-          <FormControl >
-            <FormLabel fontSize={'large'}>Course</FormLabel>
-            <CheckboxGroup onChange={setCourse} value={course}>
+          <FormControl>
+            <FormLabel htmlFor="course" fontSize={'large'}>Course</FormLabel>
+            <CheckboxGroup id="course" name="course" onChange={setCourse} value={course}>
               <HStack spacing={4}>
                 <Checkbox value="MCA">MCA</Checkbox>
                 <Checkbox value="MTECH">MTECH</Checkbox>
@@ -168,8 +176,10 @@ const UpdateEmployee = ({ employee, onClose }) => {
             </CheckboxGroup>
           </FormControl>
           <FormControl>
-            <FormLabel fontSize={'large'}>Image Upload</FormLabel>
+            <FormLabel htmlFor="image" fontSize={'large'}>Image Upload</FormLabel>
             <Input
+              id="image"
+              name="image"
               type="file"
               accept="image/jpeg, image/png"
               onChange={(e) => setImage(e.target.files[0])}
