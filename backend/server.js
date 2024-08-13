@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 
 const corsOptions = {
-  origin:  process.env.FRONTEND_URL || 'https://dealsdray-admin-6zts.vercel.app',
+  origin:  process.env.FRONTEND_URL || 'https://dealsdray-admin.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
