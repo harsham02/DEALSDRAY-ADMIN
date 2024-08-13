@@ -1,8 +1,7 @@
 import React from 'react'
-import './navBar.css'
 import { useNavigate } from 'react-router-dom';
-
-const NavBar = () => {
+import './NavBar.css'
+const MainData = () => {
 
     const navigate = useNavigate();
 
@@ -29,4 +28,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default MainData

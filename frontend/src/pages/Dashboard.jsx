@@ -14,7 +14,7 @@ import {
 import CreateEmployee from '../components/CreateEmployee';
 import axios from 'axios';
 import EmployeesTable from '../components/EmployeesTable';
-import NavBar from '../components/navBar';
+import MainData from '../components/MainData';
 
 const Dashboard = ({ user }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -47,7 +47,7 @@ const Dashboard = ({ user }) => {
   return (
     <div className='dashboard'>
 
-      <NavBar />
+      <MainData />
       <div className='control-panels'>
         <Button bg={'transparent'} color={'whitesmoke'}>
           Total Count : {employeesCount}
