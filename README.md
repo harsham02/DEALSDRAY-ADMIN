@@ -23,6 +23,6 @@ DealsDray is an admin panel application built using the MERN stack (MongoDB, Exp
 - **Styling**: Chakra UI for modern, responsive UI design.
 - **State Management**: React hooks for managing state in functional components.
 
-- 
+Project presentation video - https://www.loom.com/share/4c41d52818b348f19b24c10346b7efe5?sid=e8105677-d34d-4a30-b696-b6320033b60b
 
 
