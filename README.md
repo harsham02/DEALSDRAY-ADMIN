@@ -13,7 +13,7 @@ DealsDray is an admin panel application built using the MERN stack (MongoDB, Exp
 - **Username**: `admin`
 - **Password**: `admin@123`
 - or
-- - **Username**: `harsha`
+-  **Username**: `harsha`
 - **Password**: `harsha@123`
 
 ## Tech Stack
@@ -22,5 +22,7 @@ DealsDray is an admin panel application built using the MERN stack (MongoDB, Exp
 - **Backend**: Node.js, Express.js, and MongoDB for the database.
 - **Styling**: Chakra UI for modern, responsive UI design.
 - **State Management**: React hooks for managing state in functional components.
+
+- 
 
 
