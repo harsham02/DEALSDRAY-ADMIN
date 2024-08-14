@@ -12,7 +12,7 @@ DealsDray is an admin panel application built using the MERN stack (MongoDB, Exp
 
 - **Username**: `admin`
 - **Password**: `admin@123`
-- or
+         or
 -  **Username**: `harsha`
 - **Password**: `harsha@123`
 
